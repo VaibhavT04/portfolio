@@ -14,7 +14,6 @@ type DialogModalProps = {
     check1: string;
     check2: string;
     check3: string;
-    check4: string;
 };
 
 const DialogModal = ({
@@ -23,7 +22,6 @@ const DialogModal = ({
                          check1,
                          check2,
                          check3,
-                         check4,
                      }: DialogModalProps) => {
     return (
         <Dialog>
@@ -42,10 +40,6 @@ const DialogModal = ({
                     <div className="flex items-center gap-x-2">
                         <BadgeCheck />
                         <h2>{check3}</h2>
-                    </div>
-                    <div className="flex items-center gap-x-2">
-                        <BadgeCheck />
-                        <h2>{check4}</h2>
                     </div>
                 </div>
             </DialogContent>
