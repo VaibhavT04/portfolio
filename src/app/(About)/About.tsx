@@ -11,6 +11,8 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 
+import {motion} from "framer-motion";
+
 import {
     Card,
     CardAction,
@@ -28,98 +30,120 @@ const About = () => {
         <>
 
             <div className="flex flex-row justify-between px-30">
-                <div className="w-[450px]">
-                    <Card className={""}>
-                        <CardHeader>
-                            <CardTitle>Web Developer</CardTitle>
-                            <CardDescription>Gained hands-on-experience of developement </CardDescription>
-                            {/*<CardAction>Card Action</CardAction>*/}
-                        </CardHeader>
-                        <CardContent>
-                            <div className="space-y-3">
-                                <Monitor/>
-                                <h3>Its an art to designing & add functionality to make your website lively</h3>
-                            </div>
-                        </CardContent>
-                        <CardFooter>
-                            <Dialog>
-                                <Dialogmodal
-                                    title={"Web Developer"}
-                                    check1={"Ensuring consistent design and user experience across the entire application."}
-                                    check2={"Building complete web applications from initial concept to deployment."}
-                                    check3={"Solving issues that arise across the entire technology stack."}>
-                                    <div className="flex cursor-pointer">
-                                        <h2 className="pr-2"> Details </h2>
-                                        <ListCollapse/>
-                                    </div>
-                                </Dialogmodal>
-                            </Dialog>
-                        </CardFooter>
+                <motion.div
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ type: "tween", duration: 2 }}
+                    initial={{ y: 200, opacity: 0.2 }}
+                >
+                    <div className="w-[450px]">
+                        <Card className={"border-gray-600"}>
+                            <CardHeader>
+                                <CardTitle className={"text-2xl"}>Web Developer</CardTitle>
+                                <CardAction>
+                                    <Monitor/>
+                                </CardAction>
+                                <CardDescription>Gained hands-on-experience of developement </CardDescription>
+                                {/*<CardAction>Card Action</CardAction>*/}
+                            </CardHeader>
+                            <CardContent>
+                                <div className="space-y-3">
+                                    <h3>Its an art to designing & add functionality to make your website lively</h3>
+                                </div>
+                            </CardContent>
+                            <CardFooter>
+                                <Dialog>
+                                    <Dialogmodal
+                                        title={"Web Developer"}
+                                        check1={"Ensuring consistent design and user experience across the entire application."}
+                                        check2={"Building complete web applications from initial concept to deployment."}
+                                        check3={"Solving issues that arise across the entire technology stack."}>
+                                        <div className="flex cursor-pointer">
+                                            <h2 className="pr-2"> Details </h2>
+                                            <ListCollapse/>
+                                        </div>
+                                    </Dialogmodal>
+                                </Dialog>
+                            </CardFooter>
+                        </Card>
+                    </div>
+                </motion.div>
 
-                    </Card>
-                </div>
+                <motion.div
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ type: "tween", duration: 3 }}
+                    initial={{ y: 200, opacity: 0.2 }}
+                >
+                    <div className="w-[450px]">
+                        <Card className={"border-gray-600"}>
+                            <CardHeader>
+                                <CardTitle className={"text-2xl"}>AI Trainee</CardTitle>
+                                <CardAction>
+                                    <BrainCircuit/>
+                                </CardAction>
+                                <CardDescription>Ai will always be a fascinating aspect</CardDescription>
+                                {/*<CardAction>Card Action</CardAction>*/}
+                            </CardHeader>
+                            <CardContent>
+                                <div className="space-y-3">
+                                    <h3>Its an art to designing & add functionality to make your website lively</h3>
+                                </div>
+                            </CardContent>
+                            <CardFooter>
+                                <Dialog>
+                                    <Dialogmodal
+                                        title={"AI Trainee"}
+                                        check1={"Worked on AI Image Generation."}
+                                        check2={"Tried varieties of models and their results"}
+                                        check3={"Covered overview of aspects of AI and its sub-domains."}>
+                                        <div className="flex cursor-pointer">
+                                            <h2 className="pr-2"> Details </h2>
+                                            <ListCollapse/>
+                                        </div>
+                                    </Dialogmodal>
+                                </Dialog>
+                            </CardFooter>
+                        </Card>
+                    </div>
+                </motion.div>
 
-                <div className="w-[450px]">
-                    <Card className={""}>
-                        <CardHeader>
-                            <CardTitle>AI Trainee</CardTitle>
-                            <CardDescription>Ai will always be a fascinating aspect</CardDescription>
-                            {/*<CardAction>Card Action</CardAction>*/}
-                        </CardHeader>
-                        <CardContent>
-                            <div className="space-y-3">
-                                <BrainCircuit/>
-                                <h3>Its an art to designing & add functionality to make your website lively</h3>
-                            </div>
-                        </CardContent>
-                        <CardFooter>
-                            <Dialog>
-                                <Dialogmodal
-                                    title={"AI Trainee"}
-                                    check1={"Worked on AI Image Generation."}
-                                    check2={"Tried varieties of models and their results"}
-                                    check3={"Covered overview of aspects of AI and its sub-domains."}>
-                                    <div className="flex cursor-pointer">
-                                        <h2 className="pr-2"> Details </h2>
-                                        <ListCollapse/>
-                                    </div>
-                                </Dialogmodal>
-                            </Dialog>
-                        </CardFooter>
-                    </Card>
-                </div>
+                <motion.div
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ type: "tween", duration: 2 }}
+                        initial={{ y: 200, opacity: 0.2 }}
+                >
+                    <div className="w-[450px]">
+                        <Card className={"border-gray-600"}>
+                            <CardHeader>
+                                <CardTitle className={"text-2xl"}>Full Stack Developer</CardTitle>
+                                <CardAction>
+                                    <DatabaseZap/>
+                                </CardAction>
+                                <CardDescription>Creating scalable websites</CardDescription>
+                                {/*<CardAction>Card Action</CardAction>*/}
+                            </CardHeader>
+                            <CardContent>
+                                <div className="space-y-3">
+                                    <h3>Integrating LLM&apos;s to your websites for automation and reducing manual workload intervention.</h3>
+                                </div>
+                            </CardContent>
+                            <CardFooter>
+                                <Dialog>
+                                    <Dialogmodal
+                                        title={"Full Stack Developer"}
+                                        check1={"Integrated AI for smart and effective outcomes."}
+                                        check2={"Structured multiple seamless API calls"}
+                                        check3={"Ensuring consistent design and user experience across the entire application."}>
+                                        <div className="flex cursor-pointer">
+                                            <h2 className="pr-2"> Details </h2>
+                                            <ListCollapse/>
+                                        </div>
+                                    </Dialogmodal>
+                                </Dialog>
+                            </CardFooter>
 
-
-                <div className="w-[450px]">
-                    <Card className={""}>
-                        <CardHeader>
-                            <CardTitle>Full Stack Developer</CardTitle>
-                            <CardDescription>Creating scalable websites</CardDescription>
-                            {/*<CardAction>Card Action</CardAction>*/}
-                        </CardHeader>
-                        <CardContent>
-                            <div className="space-y-3">
-                                <DatabaseZap/>
-                                <h3>Integrating LLM's to your websites.</h3>
-                            </div>
-                        </CardContent>
-                        <CardFooter>
-                            <Dialog>
-                                <Dialogmodal
-                                    title={"Full Stack Developer"}
-                                    check1={"Integrated AI for smart and effective outcomes."}
-                                    check2={"Structured multiple seamless API calls"}
-                                    check3={"Ensuring consistent design and user experience across the entire application."}>
-                                    <div className="flex cursor-pointer">
-                                        <h2 className="pr-2"> Details </h2>
-                                        <ListCollapse/>
-                                    </div>
-                                </Dialogmodal>
-                            </Dialog>
-                        </CardFooter>
-
-                    </Card>
-                </div>
+                        </Card>
+                    </div>
+                </motion.div>
             </div>
         </>
     )
