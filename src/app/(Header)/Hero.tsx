@@ -68,7 +68,6 @@ const Hero = () => {
                         <h5 className="w-24 font-extralight h-0.5 bg-gray-500 "></h5>
                         <h5 className="mr-6 w-18 font-extralight h-0.5 bg-gray-500 "></h5>
                         <h5 className="w-24 font-extralight h-0.5 bg-gray-500 "></h5>
-
                     </div>
                 </div>
             </div>

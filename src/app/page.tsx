@@ -1,7 +1,7 @@
 import Navbar from "@/app/(Header)/Navbar";
-// import About from "@/app/(About)/About";
 import Hero from "@/app/(Header)/Hero";
 import About from "@/app/(About)/About";
+import Skills from "@/app/(Skills)/Skills"
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
         <Navbar/>
           <Hero/>
           <About/>
+          <Skills/>
       </>
   );
 }
