@@ -77,8 +77,8 @@ const Hero = () => {
                 initial={{ y: 200, opacity: 0.2 }}
                 className="flex items-center mt-20 md:mt-0 mb-22 sm:mt-4   justify-center  space-x-2 "
             >
-                <div className="flex justify-center md:h-16 border-4 h-14  border-primary md:w-8 w-8 rounded-full">
-                    <div className="w-0.5 h-3 mt-2 animate-bounce md:border-4 border-2 border-primary"></div>
+                <div className="flex justify-center md:h-13 border-4 h-10  border-primary md:w-8 w-8 rounded-full">
+                    <div className="w-0.5 h-3 mt-2 animate-bounce md:border-4 border-2 rounded-full border-primary"></div>
                 </div>
                 <div className="flex ml-3 items-center">
                     Scroll down <MoveDown className="mr-2 h-4 w-4 animate-pulse" />

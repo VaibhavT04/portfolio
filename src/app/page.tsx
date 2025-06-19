@@ -9,7 +9,9 @@ export default function Home() {
         <Navbar/>
           <Hero/>
           <About/>
-          <Skills/>
+          <div className="mt-26">
+              <Skills/>
+          </div>
       </>
   );
 }

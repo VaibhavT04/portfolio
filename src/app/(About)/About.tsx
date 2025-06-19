@@ -4,11 +4,6 @@ import React from 'react'
 import Dialogmodal from "@/components/ui/dialogmodal";
 import {
     Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
 } from "@/components/ui/dialog"
 
 import {motion} from "framer-motion";
@@ -28,12 +23,17 @@ import { Monitor, ListCollapse, BrainCircuit, DatabaseZap } from "lucide-react"
 const About = () => {
     return (
         <>
-
+            <div className="text-center mb-12 mt-30 space-y-1">
+                <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold capitalize  md:mt-0 ">
+                    About Me
+                </h1>
+            </div>
             <div className="flex flex-row justify-between px-30">
                 <motion.div
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ type: "tween", duration: 2 }}
-                    initial={{ y: 200, opacity: 0.2 }}
+                    initial={{ y: 100, opacity: 0.2 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 2 }}
+                    viewport={{once: true}}
                 >
                     <div className="w-[450px]">
                         <Card className={"border-gray-600"}>
@@ -69,9 +69,10 @@ const About = () => {
                 </motion.div>
 
                 <motion.div
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ type: "tween", duration: 3 }}
-                    initial={{ y: 200, opacity: 0.2 }}
+                    initial={{ y: 140, opacity: 0.2 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 2 }}
+                    viewport={{once: true}}
                 >
                     <div className="w-[450px]">
                         <Card className={"border-gray-600"}>
@@ -107,9 +108,10 @@ const About = () => {
                 </motion.div>
 
                 <motion.div
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ type: "tween", duration: 2 }}
-                        initial={{ y: 200, opacity: 0.2 }}
+                    initial={{ y: 100, opacity: 0.2 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 2 }}
+                    viewport={{once: true}}
                 >
                     <div className="w-[450px]">
                         <Card className={"border-gray-600"}>
