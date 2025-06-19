@@ -30,8 +30,8 @@ const About = () => {
             </div>
             <div className="flex flex-row justify-between px-30">
                 <motion.div
-                    initial={{ y: 100, opacity: 0.2 }}
-                    whileInView={{ y: 0, opacity: 1 }}
+                    initial={{ x:-50, y: 100, opacity: 0.2 }}
+                    whileInView={{ x:0, y: 0, opacity: 1 }}
                     transition={{ duration: 2 }}
                     viewport={{once: true}}
                 >
@@ -108,8 +108,8 @@ const About = () => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ y: 100, opacity: 0.2 }}
-                    whileInView={{ y: 0, opacity: 1 }}
+                    initial={{ x:50, y: 100, opacity: 0.2 }}
+                    whileInView={{ x: 0, y: 0, opacity: 1 }}
                     transition={{ duration: 2 }}
                     viewport={{once: true}}
                 >
