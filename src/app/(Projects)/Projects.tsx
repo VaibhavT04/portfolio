@@ -1,66 +1,32 @@
-import * as React from "react"
+"use client";
+import { motion } from "framer-motion";
+import React from "react";
+import Card from "./Card";
+import ProjectData from "./data.json";
 
-import { Card, CardContent } from "@/components/ui/card"
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
-import data from "./data.json"
-
-const Projects = () => {
-    var currProj = data[1];
-
-    const getData(i){
-        currProj = data[i]
-    }
-
+const Project = () => {
     return (
-        <div className="w-3/4 pl-100 flex flex-col justify-center">
-            <div className="text-center mb-20">
-                <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold capitalize  md:mt-0 ">
-                    Projects
+        <>
+            <div className="text-center space-y-1">
+                <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold capitalize mb-20 md:mt-0 ">
+                    Projects based Learnings
                 </h1>
             </div>
-
-            <div className="flex items-center justify-center">
-                <div className="flex flex-row">
-                    <Carousel
-                        opts={{
-                            align: "start",
-                        }}
-                        orientation="vertical"
-                        className="max-w-xs"
-                    >
-                        <CarouselContent className="-mt-20 flex justify-center w-full h-[200px]">
-                            {Array.from({ length: 5 }).map((_, index) => (
-                                <CarouselItem key={index} className="pt-1 md:basis-1/2">
-                                    <div className="p-1">
-                                        <Card>
-                                            <CardContent className="flex items-center justify-center p-6">
-                                                {getData(index + 1)}
-                                                <div>
-                                                    curr
-                                                </div>
-                                            </CardContent>
-                                        </Card>
-                                    </div>
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
-                    </Carousel>
-                </div>
-
-                <div>
-
-                </div>
+            <div>
+                {ProjectData.map((proj) => (
+                    <Card
+                        key={proj.id}
+                        description={proj.description}
+                        title={proj.title}
+                        color={proj.color}
+                        image={proj.ImageUrl}
+                        githubURL={proj.github}
+                        websiteURL={proj.websiteUrl}
+                    />
+                ))}
             </div>
-        </div>
-    )
-}
+        </>
+    );
+};
 
-export default Projects
+export default Project;

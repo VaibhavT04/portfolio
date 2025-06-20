@@ -1,29 +1,29 @@
 [
   {
     "id": 1,
-    "title": "Forge Commerce",
-    "description": "It is a API which can be used to make many e-commerce stores with payment integration (please read the README on github first)",
-    "github": "https://github.com/DhrishP/ecomm-dashboard-admin",
-    "ImageUrl": "/images/dashboard-dark.png",
-    "websiteUrl": "https://forge-commerce.vercel.app/",
-    "color": "gray"
+    "title": "AI Interviewer",
+    "description": "AI interview platform using Vapi (voice agent) and Gemini LLM for dynamic question generation, real-time feedback. Firebase Auth, Firestore DB, Next.js frontend.",
+    "github": "https://github.com/VaibhavT04/Interview-Prep-AI",
+    "ImageUrl": "/ProjInterview.png",
+    "websiteUrl": "https://interview-prep-ai-three.vercel.app/",
+    "color": "orange"
   },
   {
     "id": 2,
-    "title": "Forge Store",
-    "description": "It is the frontend template using e-comm admin API for the data , filters and payment processing",
-    "github": "https://github.com/DhrishP/ecomm-store",
-    "ImageUrl": "/images/store-luxury.png",
-    "websiteUrl": "https://forge-ecomm-store.vercel.app/",
+    "title": "AI LMS Saas Platform",
+    "description": "AI LMS using LLMs for material generation, course recommendations. Stripe-integrated payments, Firestore DB, dynamic content via admin API, built with Next.js.",
+    "github": "https://github.com/VaibhavT04/Eduvia-AI",
+    "ImageUrl": "/LMS.png",
+    "websiteUrl": "https://eduvia-phi.vercel.app/",
     "color": "blue"
   },
   {
     "id":3,
-    "title": "RAGVault",
-    "description": "RAGVault is a CLI tool to use RAG(Retrieval Augmented Generation) in your your terminal using local vector database which does embeddings locally and also answers your queries using default chromaDB LLM or you can use your own LLM",
-    "github": "https://github.com/DhrishP/RAGVault",
-    "ImageUrl": "/images/ragvault.png",
-    "websiteUrl": "https://github.com/DhrishP/RAGVault",
-    "color": "purple"
+    "title": "ML-Brain Tumor Detection",
+    "description": "A machine learning-based system that classifies brain MRI scans by predicting tumor presence using three different ML algorithms. It outputs the probability (%) of tumor detection for each model to aid diagnosis.",
+    "github": "https://github.com/VaibhavT04/",
+    "ImageUrl": "/ML.jpeg",
+    "websiteUrl": "https://github.com/VaibhavT04/",
+    "color": "red"
   }
 ]
