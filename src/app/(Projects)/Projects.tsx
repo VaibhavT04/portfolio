@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+
 import React from "react";
 import Card from "./Card";
 import ProjectData from "./data.json";
@@ -12,7 +12,7 @@ const Project = () => {
                     Projects based Learnings
                 </h1>
             </div>
-            <div>
+            <div className="mb-30">
                 {ProjectData.map((proj) => (
                     <Card
                         key={proj.id}
