@@ -50,8 +50,8 @@ const Contact = () => {
             if (response.ok) {
                 toast.success(data.message);
                 const submissionCount = parseInt(localStorage.getItem('submissionCount') || '0');
-                if (submissionCount >= 5) {
-                    toast.error('Submission limit reached. You can submit up to 5 times.');
+                if (submissionCount >= 3) {
+                    toast.error('Submission limit reached. You can submit up to 3 times.');
                     return;
                 }
                 localStorage.setItem('submissionCount', (submissionCount + 1).toString());

@@ -8,7 +8,7 @@ import Contact from "@/app/{Contact}/Contact";
 export default function Home() {
   return (
       <>
-        <Navbar/>
+          <Navbar/>
           <Hero/>
           <About/>
           <div className="mt-26 justify-center items-center pl-120 w-3/4">
