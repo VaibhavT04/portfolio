@@ -110,7 +110,7 @@ const Contact = () => {
                 />
                 <textarea
                     ref={textareaRef}
-                    className='scrollbar-hide min-h-12 bg-transparent border-b border-textDark py-4 resize-none mb-4 outline-none w-full placeholder-white focus:border-textGreen transition-all'
+                    className='scrollbar-hide min-h-11 bg-transparent border-b border-textDark py-4 resize-none mb-4 outline-none w-full placeholder-white focus:border-textGreen transition-all'
                     id='message'
                     onChange={(e) => {
                         handleChange('message', e.target.value);
