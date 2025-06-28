@@ -121,7 +121,7 @@ const Contact = () => {
                     value={client.message}
                     rows={1}
                 />
-                <button type='submit' className='border items-center justify-center border-textDark hover:bg-hoverColor rounded-full px-8 py-2 text-accent font-semibold duration-300'>{buttonText}</button>
+                <button type='submit' className='border justify-center border-textDark hover:bg-hoverColor rounded-full px-8 py-2 text-accent font-semibold duration-300'>{buttonText}</button>
             </motion.form>
         </section>
     )
