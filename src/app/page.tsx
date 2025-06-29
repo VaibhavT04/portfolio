@@ -3,7 +3,7 @@ import Hero from "@/app/(Header)/Hero";
 import About from "@/app/(About)/About";
 import Skills from "@/app/(Skills)/Skills"
 import Projects from "@/app/(Projects)/Projects"
-import Contact from "@/app/{Contact}/Contact";
+import Contact from "@/app/(Contact)/Contact"
 
 export default function Home() {
   return (
