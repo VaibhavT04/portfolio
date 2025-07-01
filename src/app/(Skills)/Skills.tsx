@@ -23,7 +23,7 @@ type SkillsProps = {
 const Skills = ({ name, x, y, pt1, pt2, pt3 }: SkillsProps) => {
     return (
         <motion.div
-            className="flex items-center justify-center rounded-full font-semibold md:bg-primary text-primary bg-transparent md:text-secondary py-2 px-3 shadow-primary cursor-pointer absolute lg:py-3 lg:px-6 md:text-sm md:py-1.5 md:px-5  sm:font-bold"
+            className="flex items-center justify-center rounded-full font-semibold md:bg-primary text-primary bg-amber-100 md:text-secondary py-2 px-3 shadow-primary cursor-pointer absolute lg:py-3 lg:px-6 md:text-sm md:py-1.5 md:px-5  sm:font-bold"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: x, y: y }}
@@ -57,12 +57,12 @@ const Skill = () => {
     return (
         <>
             <div className="text-center space-y-1">
-                <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold capitalize  md:mt-0 ">
+                <h1 className="text-center text-5xl text-amber-100 md:text-6xl sm:text-6xl font-semibold capitalize  md:mt-0 ">
                     Skills
                 </h1>
                 <p className="text-gray-500">Equipped with these TechStack</p>
             </div>
-            <div className="w-3/4 mx-auto  relative flex lg:h-screen md:h-[80vh] h-[50vh] items-center justify-center  bg-circularLightsm  md:bg-circularLight dark:bg-circularDarksm md:dark:bg-circularDark  ">
+            <div className="w-3/4 mx-auto relative flex lg:h-screen md:h-[80vh] h-[50vh] items-center justify-center  bg-circularLightsm  md:bg-circularLight dark:bg-circularDarksm md:dark:bg-circularDark  ">
                 <motion.div
                     className="flex items-center justify-center rounded-full font-semibold bg-transparent text-primary md:bg-primary md:text-secondary shadow-primary cursor-pointer lg:p-8 md:p-5 sm:p-6 sm:text-xs"
                     whileHover={{ scale: 1.05 }}

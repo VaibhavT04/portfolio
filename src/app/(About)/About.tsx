@@ -24,7 +24,7 @@ const About = () => {
     return (
         <>
             <div className="text-center mb-12 mt-30 space-y-1">
-                <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold capitalize  md:mt-0 ">
+                <h1 className="text-center text-5xl text-amber-100 md:text-6xl sm:text-6xl font-semibold capitalize  md:mt-0 ">
                     About Me
                 </h1>
             </div>

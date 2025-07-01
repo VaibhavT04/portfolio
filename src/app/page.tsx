@@ -4,6 +4,7 @@ import About from "@/app/(About)/About";
 import Skills from "@/app/(Skills)/Skills"
 import Projects from "@/app/(Projects)/Projects"
 import Contact from "@/app/(Contact)/Contact"
+import Footer from "@/app/Footer/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           </div>
           <Projects/>
           <Contact/>
+          <Footer/>
       </>
   );
 }

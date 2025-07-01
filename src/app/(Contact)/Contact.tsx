@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { RiLoader5Fill } from 'react-icons/ri';
 
-// Define the correct type for the form state
 interface ContactFormState {
   errors?: {
     name?: string[];
@@ -55,6 +54,7 @@ function ContactForm() {
         setState({ errors: result.errors });
       }
     } catch (error) {
+      console.log(error)
       setState({
         errors: {
           name: undefined,
@@ -70,14 +70,14 @@ function ContactForm() {
   return (
     <div className="flex flex-col items-center mt-40 ml-20 justify-center mb-30">
       <div>
-        <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold capitalize mb-12 md:mt-0 ">
+        <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold text-amber-100 capitalize mb-12 md:mt-0 ">
           Contact Me
         </h1>
       </div>
       <div className="border-2 border-gray-800 p-10 rounded-2xl">
         <div>
-          <h2 className="mt-1 text-center mb-4 text-4xl font-extrabold text-amber-100">Get in Touch</h2>
-          <p className="mt-1 mb-4 text-center text-lg text-indigo-300">
+          <h2 className="mt-1 text-center mb-4 text-4xl font-extrabold ">Get in Touch</h2>
+          <p className="mt-1 mb-4 text-center text-lg">
             I'd love to hear from you! Fill out the form below to get in touch.
           </p>
         </div>
@@ -128,7 +128,7 @@ function ContactForm() {
               id="message"
               required
               cols={100}
-              rows={10}
+              rows={7}
               className="border mt-2 mb-5 w-full py-3 pl-4 rounded-lg focus:outline-slate-500 border-gray-500"
               placeholder="Enter your message..."
             ></textarea>
