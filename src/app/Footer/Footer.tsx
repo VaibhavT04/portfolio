@@ -1,6 +1,5 @@
 import React from 'react'
 import { Github, Linkedin, FileTextIcon} from "lucide-react";
-import Image from "next/image";
 
 const Footer = () => {
     return (

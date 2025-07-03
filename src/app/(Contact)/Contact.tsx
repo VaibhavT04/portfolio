@@ -3,6 +3,14 @@
 import React, { useState } from "react";
 import { RiLoader5Fill } from 'react-icons/ri';
 
+const initialState: ContactFormState = {
+  errors: {
+    name: undefined,
+    email: undefined,
+    message: undefined,
+  },
+};
+
 interface ContactFormState {
   errors?: {
     name?: string[];
@@ -12,13 +20,6 @@ interface ContactFormState {
   success?: string;
 }
 
-const initialState: ContactFormState = {
-  errors: {
-    name: undefined,
-    email: undefined,
-    message: undefined,
-  },
-};
 
 function ContactForm() {
   const [state, setState] = useState<ContactFormState>(initialState);

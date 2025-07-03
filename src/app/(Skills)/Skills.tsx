@@ -27,7 +27,7 @@ const Skills = ({ name, x, y, pt1, pt2, pt3 }: SkillsProps) => {
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: x, y: y }}
-            transition={{ duration: 1.9 }}
+            transition={{ duration: 1.8 }}
             viewport={{ once: true }}
         >
             <DropdownMenu>
