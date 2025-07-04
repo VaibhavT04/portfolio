@@ -11,7 +11,7 @@ const Hero = () => {
         <>
             <div id="home" className="w-full mt-10 md:mt-0 md:h-[80vh] sm:h-[60vh] flex flex-col-reverse sm:flex-row space-y-10 md:space-y-0 ">
                 <div className="sm:w-1/2 flex flex-col items-center justify-center space-y-1">
-                    <h3 className="md:text-5xl text-amber-100 mt-10 sm:text-4xl text-3xl font-semibold">
+                    <h3 className="md:text-5xl mt-10 sm:text-4xl text-3xl font-semibold">
                         Vaibhav Tatkare👋
                     </h3>
                     <div className="flex items-center justify-center space-x-1 pl-26 pt-2 mb-10 md:mb-0 sm:mb-5 ">
@@ -23,7 +23,7 @@ const Hero = () => {
                         Passionate full stack web developer with fascination about AI and LLM integrations to your websites.
                     </div>
                     <div className="w-1/2 mt-8 flex justify-start">
-                        <Button variant="outline" className="w-[230px] h-[55px]">
+                        <Button variant="outline" className="w-[230px] h-[55px] hover:cursor-pointer">
                             <a className="flex space-x-3 text-lg items-center">
                                 <h3>Get in touch</h3>
                                 <Clapperboard/>

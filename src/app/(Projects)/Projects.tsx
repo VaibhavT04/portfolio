@@ -8,7 +8,7 @@ const Project = () => {
     return (
         <>
             <div className="text-center space-y-1">
-                <h1 className="text-center text-amber-100 text-5xl md:text-6xl sm:text-6xl font-semibold capitalize mb-20 md:mt-0 ">
+                <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold capitalize mb-20 md:mt-0 ">
                     Projects based Learnings
                 </h1>
             </div>
