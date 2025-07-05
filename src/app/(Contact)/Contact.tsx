@@ -161,7 +161,7 @@ function SubmitButton({ isSubmitting }: { isSubmitting: boolean }) {
     <button
       type="submit"
       disabled={isSubmitting}
-      className="bg-green-600 w-full text-white font-semibold px-3 py-2 rounded-lg"
+      className="bg-amber-300/80 w-full text-amber-950/100 font-semibold px-3 py-2 rounded-lg"
     >
       {isSubmitting ? (
         <span>

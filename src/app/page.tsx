@@ -7,11 +7,14 @@ import Projects from "@/app/(Projects)/Projects"
 import Contact from "@/app/(Contact)/Contact"
 import Footer from "@/app/Footer/Footer";
 import SmoothFollower from "@/components/SmoothFollower";
+import ProgressBar from "@/components/ProgressBar/ProgressBar";
+import ProjectsScroll from "@/components/Projects/ProjectsScroll";
 
 export default function Home() {
 
   return (
       <>
+          <ProgressBar/>
           <SmoothFollower/>
           <Navbar/>
           <Hero/>
@@ -19,7 +22,7 @@ export default function Home() {
           <div className="mt-26 justify-center items-center pl-120 w-3/4">
               <Skills/>
           </div>
-          <Projects/>
+          <ProjectsScroll/>
           <Contact/>
           <Footer/>
       </>

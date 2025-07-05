@@ -78,6 +78,14 @@
   --sidebar-ring: oklch(0.55 0.03 265);
 }
 
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 .dark {
   --background: oklch(0.15 0.03 265);         /* deep navy */
   --foreground: oklch(0.98 0.01 260);         /* light text */

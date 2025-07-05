@@ -1,0 +1,85 @@
+/*.wrapper {*/
+/*    width: 100%;*/
+/*}*/
+
+/*.projectSection {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*    position: relative;*/
+/*    padding: 5rem 2rem;*/
+/*    gap: 2rem;*/
+/*}*/
+
+/*.imageWrapper {*/
+/*    width: 40%;*/
+/*    height: 10vh;*/
+/*    position: relative;*/
+/*    flex-shrink: 0;*/
+/*}*/
+
+/*.img {*/
+/*    object-fit: cover;*/
+/*    border-radius: 1rem;*/
+/*}*/
+
+/*.content {*/
+/*    width: 50%;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/
+
+
+
+/* Main wrapper that holds all sections vertically */
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each project section is its own scrollable block */
+.projectSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    padding: 5rem 2rem;
+    gap: 2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Image wrapper that will be pinned inside each section */
+.imageWrapper {
+    margin-left: 60px;
+    padding: 80px;
+    width: 49%;
+    height: 58vh;
+    position: relative;
+    flex-shrink: 0;
+    z-index: 1;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/* The image itself (from Next.js) */
+.img {
+    /*object-fit: cover;*/
+    border-radius: 10px;
+    border-color: #fdf700;
+}
+
+/* The textual content next to the image */
+.content {
+    width: 50%;
+    padding: 2rem;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}

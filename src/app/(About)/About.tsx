@@ -28,7 +28,7 @@ const About = () => {
                     About Me
                 </h1>
             </div>
-            <div className="flex flex-row justify-between px-30">
+            <div className="flex md:flex-row sm:flex-col justify-between px-30">
                 <motion.div
                     initial={{ x:-50, y: 100, opacity: 0.2 }}
                     whileInView={{ x:0, y: 0, opacity: 1 }}
@@ -36,7 +36,7 @@ const About = () => {
                     viewport={{once: true}}
                 >
                     <div className="w-[450px]">
-                        <Card className={"border-gray-600"}>
+                        <Card className={"border-gray-600 shadow-2xl"}>
                             <CardHeader>
                                 <CardTitle className={"text-2xl"}>Web Developer</CardTitle>
                                 <CardAction>
@@ -75,7 +75,7 @@ const About = () => {
                     viewport={{once: true}}
                 >
                     <div className="w-[450px]">
-                        <Card className={"border-gray-600"}>
+                        <Card className={"border-gray-600 shadow-2xl"}>
                             <CardHeader>
                                 <CardTitle className={"text-2xl"}>AI Trainee</CardTitle>
                                 <CardAction>
@@ -114,7 +114,7 @@ const About = () => {
                     viewport={{once: true}}
                 >
                     <div className="w-[450px]">
-                        <Card className={"border-gray-600"}>
+                        <Card className={"border-gray-600 shadow-2xl"}>
                             <CardHeader>
                                 <CardTitle className={"text-2xl"}>Full Stack Developer</CardTitle>
                                 <CardAction>
