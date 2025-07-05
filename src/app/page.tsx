@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "@/app/(Header)/Navbar";
 import Hero from "@/app/(Header)/Hero";
 import About from "@/app/(About)/About";
@@ -5,10 +6,13 @@ import Skills from "@/app/(Skills)/Skills"
 import Projects from "@/app/(Projects)/Projects"
 import Contact from "@/app/(Contact)/Contact"
 import Footer from "@/app/Footer/Footer";
+import SmoothFollower from "@/components/SmoothFollower";
 
 export default function Home() {
+
   return (
       <>
+          <SmoothFollower/>
           <Navbar/>
           <Hero/>
           <About/>

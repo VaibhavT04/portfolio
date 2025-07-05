@@ -9,6 +9,7 @@ import {Button} from "@/components/ui/button";
 const Hero = () => {
     return (
         <>
+            <div id="home"></div>
             <div id="home" className="w-full mt-10 md:mt-0 md:h-[80vh] sm:h-[60vh] flex flex-col-reverse sm:flex-row space-y-10 md:space-y-0 ">
                 <div className="sm:w-1/2 flex flex-col items-center justify-center space-y-1">
                     <h3 className="md:text-5xl mt-10 sm:text-4xl text-3xl font-semibold">

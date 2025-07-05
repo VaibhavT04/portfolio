@@ -69,6 +69,8 @@ function ContactForm() {
   };
 
   return (
+      <>
+      <div id="contact"></div>
     <div className="flex flex-col items-center mt-40 ml-20 justify-center mb-30">
       <div>
         <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold capitalize mb-12 md:mt-0 ">
@@ -148,6 +150,7 @@ function ContactForm() {
       </div>
       {state?.success && <p className="text-green-600">{state.success}</p>}
     </div>
+      </>
   );
 }
 
