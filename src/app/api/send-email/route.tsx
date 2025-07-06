@@ -9,7 +9,8 @@ const contactFormSchema = z.object({
   message: z.string().trim().min(1, { message: "Please type in a message" }),
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend only if API key is available
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 const recipientEmail = process.env.RECIPIENT_EMAIL || "vaibhavtatkare2004@gmail.com";
 
 export async function POST(request: NextRequest) {
@@ -19,6 +20,15 @@ export async function POST(request: NextRequest) {
       console.error('Resend API key not configured');
       return NextResponse.json(
         { errors: { message: ["Email service not configured. Please contact the administrator."] } },
+        { status: 500 }
+      );
+    }
+
+    // Check if Resend client is initialized
+    if (!resend) {
+      console.error('Resend client not initialized');
+      return NextResponse.json(
+        { errors: { message: ["Email service not available. Please try again later."] } },
         { status: 500 }
       );
     }

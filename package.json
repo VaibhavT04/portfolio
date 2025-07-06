@@ -14,7 +14,6 @@
     "@radix-ui/react-dropdown-menu": "^2.1.15",
     "@radix-ui/react-slot": "^1.2.3",
     "@react-email/components": "^0.1.1",
-    "@studio-freight/react-lenis": "^0.0.47",
     "antd": "^5.26.2",
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
