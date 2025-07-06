@@ -24,7 +24,7 @@ const MobileNavbar: React.FC = () => {
 
     const scrollToSection = (e: React.MouseEvent, id: string) => {
         e.preventDefault();
-        const el = document.querySelector(id);
+        const el = document.querySelector(id) as HTMLElement;
         if (lenis && el) {
             lenis.scrollTo(el, {
                 offset: -100,

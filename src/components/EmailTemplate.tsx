@@ -46,8 +46,8 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
           
           <Text style={footer}>
             This message was sent from your portfolio contact form at{' '}
-            <Link href="https://your-portfolio-domain.com" style={link}>
-              your-portfolio-domain.com
+            <Link href={process.env.NEXT_PUBLIC_SITE_URL || "https://your-portfolio-domain.com"} style={link}>
+              {process.env.NEXT_PUBLIC_SITE_URL || "your-portfolio-domain.com"}
             </Link>
           </Text>
         </Container>

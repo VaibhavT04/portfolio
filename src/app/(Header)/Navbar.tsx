@@ -24,7 +24,7 @@ function Navbar() {
 
     const scrollToSection = (e: React.MouseEvent, id: string) => {
         e.preventDefault(); // prevent default jump
-        const el = document.querySelector(id);
+        const el = document.querySelector(id) as HTMLElement;
         if (lenis && el) {
             lenis.scrollTo(el, {
                 offset: -100, // adjust for fixed navbar if needed
