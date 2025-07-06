@@ -32,7 +32,7 @@ const Hero = () => {
                         </Button>
                     </div>
                 </div>
-                <div className="sm:w-1/2 p-10 md:h-[60vh] h-[30vh] mt-8 flex items-center justify-center mb-10 md:mb-0">
+                <div className="sm:w-1/2 p-10 md:mr-28 md:h-[60vh] h-[30vh] mt-8 flex items-center justify-center mb-10 md:mb-0">
                     <div className="flex-col space-y-5 mt-15">
                         <h5 className="w-24 font-extralight h-0.5 bg-gray-500 "></h5>
                         <h5 className="ml-6 w-18 font-extralight h-0.5 bg-gray-500 "></h5>
