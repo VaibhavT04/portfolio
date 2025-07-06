@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext } from "react";
-import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
+import { ReactLenis, useLenis } from "lenis/react";
 
 const LenisContext = createContext<ReturnType<typeof useLenis> | null>(null);
 
