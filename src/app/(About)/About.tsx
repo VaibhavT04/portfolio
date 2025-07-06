@@ -28,14 +28,14 @@ const About = () => {
                     About Me
                 </h1>
             </div>
-            <div className="flex md:flex-row sm:flex-col justify-between px-30">
+            <div className="flex flex-col lg:flex-row md:flex-col px-15 space-x-3 justify-center">
                 <motion.div
                     initial={{ x:-50, y: 100, opacity: 0.2 }}
                     whileInView={{ x:0, y: 0, opacity: 1 }}
                     transition={{ duration: 2 }}
                     viewport={{once: true}}
                 >
-                    <div className="w-[450px]">
+                    <div className="lg:w-[30vw] p-5">
                         <Card className={"border-gray-600 shadow-2xl"}>
                             <CardHeader>
                                 <CardTitle className={"text-2xl"}>Web Developer</CardTitle>
@@ -74,7 +74,7 @@ const About = () => {
                     transition={{ duration: 2 }}
                     viewport={{once: true}}
                 >
-                    <div className="w-[450px]">
+                    <div className="lg:w-[30vw] p-5">
                         <Card className={"border-gray-600 shadow-2xl"}>
                             <CardHeader>
                                 <CardTitle className={"text-2xl"}>AI Trainee</CardTitle>
@@ -113,7 +113,7 @@ const About = () => {
                     transition={{ duration: 2 }}
                     viewport={{once: true}}
                 >
-                    <div className="w-[450px]">
+                    <div className="lg:w-[30vw] p-5">
                         <Card className={"border-gray-600 shadow-2xl"}>
                             <CardHeader>
                                 <CardTitle className={"text-2xl"}>Full Stack Developer</CardTitle>

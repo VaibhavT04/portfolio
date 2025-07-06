@@ -7,7 +7,7 @@ import ProjectData from "./data.json";
 const Project = () => {
     return (
         <>
-            <div id="projects" className="text-center space-y-1">
+            <div className="text-center space-y-1">
                 <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold capitalize mb-20 md:mt-0 ">
                     Projects based Learnings
                 </h1>

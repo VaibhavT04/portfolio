@@ -66,6 +66,7 @@
     overflow: hidden;
 }
 
+
 /* The image itself (from Next.js) */
 .img {
     /*object-fit: cover;*/
@@ -77,9 +78,40 @@
 .content {
     width: 50%;
     padding: 2rem;
-    margin-right: 80px;
+    margin-right: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 2;
+}
+
+@media (max-width: 639px) {
+    .projectSection {
+        flex-direction: column;
+        padding: 3rem 1rem;
+        gap:0.2rem;
+    }
+
+    .imageWrapper {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img {
+        position: relative !important;
+        width: 90% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+    .content {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        gap:0.5rem;
+    }
 }

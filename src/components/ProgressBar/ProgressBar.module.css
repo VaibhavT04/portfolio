@@ -8,3 +8,10 @@
     transform-origin: 0%;
     z-index: 10;
 }
+
+@media (max-width: 639px) {
+    .progressBar {
+        height: 0.2vh;
+        top: 0px;
+    }
+}

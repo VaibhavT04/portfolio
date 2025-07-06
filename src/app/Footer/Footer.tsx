@@ -3,7 +3,7 @@ import { Github, Linkedin, FileTextIcon} from "lucide-react";
 
 const Footer = () => {
     return (
-        <div className="w-full h-20 bg-gray-600/20 flex items-center justify-center">
+        <div className="w-full h-20 bg-gray-600/20 flex items-center justify-center mb-[70px] md:mb-0">
             <div className="flex flex-row justify-center items-center opacity-100">
                 <div>
                     <h1 className="text-lg font-bold">My Socials : </h1>

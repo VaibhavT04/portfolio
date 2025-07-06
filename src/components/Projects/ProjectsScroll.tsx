@@ -100,7 +100,7 @@ const ProjectsScroll: React.FC = () => {
     return (
         <>
             <div>
-                <h1 id="projects" className="text-center text-5xl md:text-6xl -mb-10 sm:text-6xl font-semibold capitalize  md:mt-0 ">
+                <h1 id="projects" className="text-center pt-10 text-5xl md:text-6xl -mb-10 sm:text-6xl font-semibold capitalize  md:mt-0 ">
                     Projects
                 </h1>
             </div>
@@ -139,7 +139,7 @@ const ProjectsScroll: React.FC = () => {
                                 </div>
                                 <div>
                                     <div className="flex flex-row">
-                                        <h2 className="mr-4 font-bold text-center my-8">TechStack :</h2>
+                                        <h2 className="mr-4 font-bold text-center my-8">TechStack </h2>
                                         {[project.techLogo1, project.techLogo2, project.techLogo3].map((logo, index) => (
                                             <div key={index} className={cn("relative my-4 -ml-2 group bg-dark-300 rounded-full p-2 flex-center", index >=1 && '-ml-6')}>
                                                 <Image src={logo} alt="logo" width={100} height={100} className="size-9 bg-white p-1 rounded-full border-1 border-gray-600" />
