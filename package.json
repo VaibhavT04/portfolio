@@ -19,7 +19,6 @@
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "cursify": "^1.0.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.18.1",
     "gsap": "^3.13.0",
