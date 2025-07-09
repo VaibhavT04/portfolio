@@ -35,7 +35,7 @@ function Navbar() {
     }
 
     return (
-        <nav className="sm:flex z-10 hidden w-full md:fixed pt-6 pb-5 justify-between items-center backdrop-filter backdrop-blur-lg bg-opacity-40 border-b border-gray-600">
+        <nav className="sm:flex z-10 hidden w-full md:fixed pt-6 pb-5 justify-between items-center backdrop-filter backdrop-blur-lg bg-opacity-99 border-b border-gray-600">
             <div className="w-1/3 flex-col flex items-center ">
                 <div className=" flex ml-20 space-x-2 items-center justify-center">
                     <DropdownMenu>

@@ -88,7 +88,8 @@
 
 
 .dark {
-  --background: oklch(0.15 0.03 265);         /* deep navy */
+  /*--background: oklch(0.15 0.03 265);         !* deep navy *!*/
+  --background: oklch(0 0 0);         /* deep navy */
   --foreground: oklch(0.98 0.01 260);         /* light text */
   --card: oklch(0.2 0.04 260);
   --card-foreground: oklch(0.98 0.01 260);
