@@ -11,11 +11,13 @@ import SmoothFollower from "@/components/SmoothFollower";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
 import ProjectsScroll from "@/components/Projects/ProjectsScroll";
 import MobileNavbar from "@/components/MobileNavbar";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 export default function Home() {
 
   return (
       <>
+          <AnimatedBackground/>
           <ProgressBar/>
           <SmoothFollower/>
           <Navbar/>

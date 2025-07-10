@@ -17,16 +17,16 @@ const Hero = () => {
                     </h3>
                     <div className="flex items-center justify-center space-x-1 pl-26 pt-2 mb-10 md:mb-0 sm:mb-5 ">
                         <h5 className="w-24 font-extralight h-0.5 bg-gray-500 "></h5>
-                        <h4 className="text-xl text-gray-300">Fullstack Developer</h4>
+                        <h4 className="text-xl dark:text-gray-300">Fullstack Developer</h4>
                     </div>
 
-                    <div className="mt-10 w-1/2 text-lg text-gray-400">
+                    <div className="mt-10 w-1/2 text-lg dark:text-gray-400">
                         Passionate full stack web developer with fascination about AI and LLM integrations to your websites.
                     </div>
                     <div className="w-1/2 mt-8 flex justify-start">
                         <Button variant="outline" className="w-[230px] h-[55px] border-1 border-gray-600 shadow-2xl hover:cursor-pointer">
                             <a className="flex space-x-3 text-lg items-center">
-                                <h3 className="text-gray-300">Get in touch</h3>
+                                <h3 className="dark:text-gray-300">Get in touch</h3>
                                 <Clapperboard/>
                             </a>
                         </Button>
