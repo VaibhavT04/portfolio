@@ -3,20 +3,9 @@
 import React, { useState } from "react";
 import { RiLoader5Fill } from 'react-icons/ri';
 
-const initialState: ContactFormState = {
-  errors: {
-    name: undefined,
-    email: undefined,
-    message: undefined,
-  },
-};
+const initialState: ContactFormState = {};
 
 interface ContactFormState {
-  errors?: {
-    name?: string[];
-    email?: string[];
-    message?: string[];
-  };
   success?: string;
 }
 
@@ -30,7 +19,8 @@ function ContactForm() {
     setIsSubmitting(true);
     setState(initialState);
 
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     const data = {
       name: formData.get('name') as string,
       email: formData.get('email') as string,
@@ -50,19 +40,16 @@ function ContactForm() {
 
       if (response.ok) {
         setState({ success: result.success });
-        e.currentTarget.reset();
-      } else {
-        setState({ errors: result.errors });
+        if (form) {
+          form.reset();
+        }
+        
+        setTimeout(() => {
+          setState(initialState);
+        }, 4000);
       }
     } catch (error) {
-      console.log(error)
-      setState({
-        errors: {
-          name: undefined,
-          email: undefined,
-          message: ["Failed to send email. Please try again later."],
-        },
-      });
+      console.error('Error in form submission:', error);
     } finally {
       setIsSubmitting(false);
     }
@@ -96,13 +83,7 @@ function ContactForm() {
               className="border mt-2 w-full py-2 pl-4 rounded-lg rounded-l-lg block md:inline focus:outline-slate-500 border-gray-500"
               placeholder="Enter your name..."
             />
-            {Array.isArray(state.errors?.name)
-              ? state.errors?.name.map((err: string, i: number) => (
-                  <p className="text-red-500" key={i}>{err}</p>
-                ))
-              : state.errors?.name && (
-                  <p className="text-red-500">{state.errors.name as string}</p>
-                )}
+
           </div>
           <div className="mb-4">
             <label htmlFor="email">Your email</label>
@@ -115,13 +96,7 @@ function ContactForm() {
               className="border mt-2 w-full py-2 pl-4 rounded-lg rounded-l-lg block md:inline focus:outline-slate-500 border-gray-500"
               placeholder="Enter your email..."
             />
-            {Array.isArray(state.errors?.email)
-              ? state.errors?.email.map((err: string, i: number) => (
-                  <p className="text-red-500" key={i}>{err}</p>
-                ))
-              : state.errors?.email && (
-                  <p className="text-red-500">{state.errors.email as string}</p>
-                )}
+
           </div>
           <div>
             <label htmlFor="message">Message</label>
@@ -135,20 +110,18 @@ function ContactForm() {
               className="border mt-2 mb-5 w-full py-3 pl-4 rounded-lg focus:outline-slate-500 border-gray-500"
               placeholder="Enter your message..."
             ></textarea>
-            {Array.isArray(state.errors?.message)
-              ? state.errors?.message.map((err: string, i: number) => (
-                  <p className="text-red-500" key={i}>{err}</p>
-                ))
-              : state.errors?.message && (
-                  <p className="text-red-500">{state.errors.message as string}</p>
-                )}
+
           </div>
           <div className="flex justify-center">
             <SubmitButton isSubmitting={isSubmitting} />
           </div>
         </form>
       </div>
-      {state?.success && <p className="text-green-600">{state.success}</p>}
+      {state?.success && (
+        <div className="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+          <p className="text-center font-medium">{state.success}</p>
+        </div>
+      )}
     </div>
       </>
   );

@@ -15,6 +15,8 @@ const recipientEmail = process.env.RECIPIENT_EMAIL || "vaibhavtatkare2004@gmail.
 
 export async function POST(request: NextRequest) {
   try {
+    console.log('API route called');
+    
     // Check if API key is configured
     if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY === 'your_resend_api_key_here') {
       console.error('Resend API key not configured');
@@ -56,6 +58,7 @@ export async function POST(request: NextRequest) {
     });
 
     console.log('Email sent successfully:', emailResult);
+    
     return NextResponse.json({ success: "Your message was sent successfully!" }, { status: 200 });
   } catch (error) {
     console.error('Error sending email:', error);
