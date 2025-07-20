@@ -4,9 +4,25 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Clapperboard, MoveDown } from 'lucide-react'
 import {Button} from "@/components/ui/button";
+import {useLenisScroll} from "@/components/SmoothScrolling";
 
 
 const Hero = () => {
+
+    const lenis = useLenisScroll();
+
+    const scrollToSection = (e: React.MouseEvent, id: string) => {
+        e.preventDefault(); // prevent default jump
+        const el = document.querySelector(id) as HTMLElement;
+        if (lenis && el) {
+            lenis.scrollTo(el, {
+                offset: -100, // adjust for fixed navbar if needed
+                duration: 1.5,
+                easing: (t) => t, // linear scroll
+            });
+        }
+    }
+
     return (
         <>
             <div id="home"></div>
@@ -25,7 +41,7 @@ const Hero = () => {
                     </div>
                     <div className="w-1/2 mt-8 flex justify-start">
                         <Button variant="outline" className="w-[230px] h-[55px] border-1 border-gray-600 shadow-2xl hover:cursor-pointer">
-                            <a className="flex space-x-3 text-lg items-center">
+                            <a className="flex space-x-3 text-lg items-center" href="#contact" onClick={(e) => scrollToSection(e, "#contact")}>
                                 <h3 className="dark:text-gray-300">Get in touch</h3>
                                 <Clapperboard/>
                             </a>
