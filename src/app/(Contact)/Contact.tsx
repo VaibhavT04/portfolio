@@ -57,14 +57,13 @@ function ContactForm() {
 
   return (
       <>
-      <div id="contact"></div>
     <div className="flex flex-col items-center mt-40 p-10 justify-center mb-30">
-      <div>
+      <div id="contact">
         <h1 className="text-center text-5xl md:text-6xl sm:text-6xl font-semibold capitalize mb-12 md:mt-0 ">
           Contact Me
         </h1>
       </div>
-      <div className="border-2 border-gray-800 p-10 rounded-2xl">
+      <div className="border-3 border-gray-800 p-10 rounded-2xl">
         <div>
           <h2 className="mt-1 text-center mb-4 text-4xl font-extrabold ">Get in Touch</h2>
           <p className="mt-1 mb-4 text-center text-lg">

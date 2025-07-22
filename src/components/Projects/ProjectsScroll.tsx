@@ -83,7 +83,7 @@ const ProjectsScroll: React.FC = () => {
                     ScrollTrigger.create({
                         trigger: section,
                         start: "top top",
-                        end: isLast ? "bottom 80%" : "bottom top", // ✅ last one unpins sooner
+                        end: isLast ? "bottom 80%" : "bottom top", 
                         scrub: true,
                         pin: image,
                         pinSpacing: false,

@@ -51,7 +51,7 @@ function Navbar() {
                                     <a
                                         className="flex items-center justify-center "
                                         target="_blank"
-                                        href="https://github.com/DhrishP "
+                                        href="https://github.com/VaibhavT04"
                                     >
                                         <Github className="mr-2 h-4 w-4" />
                                         <span>GitHub</span>
@@ -61,7 +61,7 @@ function Navbar() {
                                     <a
                                         className="flex items-center justify-center "
                                         target="_blank"
-                                        href="https://www.linkedin.com/in/dhrish-parekh-89a845262/ "
+                                        href="https://www.linkedin.com/in/vaibhav-tatkare-code/"
                                     >
                                         <LinkedinIcon className="mr-2 h-4 w-4" />
                                         <span>LinkedIn</span>
@@ -71,7 +71,7 @@ function Navbar() {
                                     <a
                                         className="flex items-center justify-center "
                                         target="_blank"
-                                        href="https://twitter.com/whycurious101 "
+                                        href="https://x.com/vaibhav_code"
                                     >
                                         <Twitter className="mr-2 h-4 w-4" />
                                         <span>Twitter</span>
@@ -81,7 +81,7 @@ function Navbar() {
                                     <a
                                         className="flex items-center justify-center "
                                         target="_blank"
-                                        href="https://dhrishp.tiiny.site"
+                                        href="https://vaibhavtatkareresume.tiiny.site/"
                                     >
                                         <File className="mr-2 h-4 w-4" />
                                         <span>Resume</span>

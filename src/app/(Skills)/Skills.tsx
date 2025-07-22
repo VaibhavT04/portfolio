@@ -56,7 +56,7 @@ const Skills = ({ name, x, y, pt1, pt2, pt3 }: SkillsProps) => {
 const Skill = () => {
     return (
         <>
-            <div id="skills" className="bg-amber-50 dark:bg-gray-800">
+            <div id="skills" className="">
                 <div className="text-center space-y-1 -mb-10">
                     <h1 className="text-center mb-10 pt-10 text-5xl md:text-7xl sm:text-6xl font-semibold capitalize mt-22 md:mt-20 ">
                         Skills
