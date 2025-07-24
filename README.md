@@ -46,8 +46,6 @@ If you liked this project or found inspiration here, feel free to ⭐️ the rep
 ## 🤝 Let's Connect
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/vaibhav-tatkare-code/)
-- 🧠 [GitHub](https://github.com/VaibhavT04)
-- ✉️ [Email](mailto:vaibhavtatkare2004@gmail.com)
 
 ---
 
